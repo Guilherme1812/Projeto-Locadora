@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+/*________________________________________________
+dados do cliente
+__________________________________________________*/
+.sobre_client{
+	margin-top: 10px;
+	font-family: Candara;
+	font-weight: bold;
+	text-align: center;
+
+}
+.sobre_client hr{
+	color: gray;
+	background-color: gray;
+	height: 1px;
+	width: 70%;
+	margin: auto auto 30px auto;
+	border:none;
+}
+/*________________________________________________
+TABELA PARA RECEBER OS DADOS
+__________________________________________________*/
+.Admin_class{
+	width: 98%;
+	margin:10px;
+	padding: 5px 30px 30px 30px;
+	float: right;
+	text-align: center;
+	font-family:'verdana';
+	color:#303030;
+	background-color: #fff;
+	box-shadow:  0 0 1em gray;
+}
+.Admin_class th{
+	width:100%;
+	padding: 10px;
+	font-size: 1em;
+}
+.Admin_class th#nRegistro{
+	width: 25%;
+	padding: 10px;	
+	color: red;
+	font-family: verdana;
+	font-size: 15px;
+}
+#tr_itens{
+	font-weight: bold;
+}
+.Admin_class tr:nth-child(2n-1){
+	background: #eee;
+}
+.Admin_class tr:nth-child(2n){
+	background: #fff;
+}
+.Admin_class tr:nth-child(2n):hover{
+	background: #eee;
+}
+.Admin_class tr:first-child{
+	background: #fff;
+	color:#404040;
+}
+.Admin_class tr:nth-child(2){
+	background: #eee;
+	border-bottom: 1px solid gray;
+	color:#404040;
+	font-family: verdana;
+
+	font-size: 1em;
+
+}
+.Admin_class td{
+	width: 10%;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.Admin_class #tr_itens{
+	font-weight: bold;
+}
+
+
+/*________________________________________________
+FORMULÁRIO PARA BUSCAR PELO NOME E SOBRENOME
+__________________________________________________*/
+label{
+	font-family:verdana;
+	color:#404040;
+}
+
+.formulario_busca{
+	width: 97%;
+	margin-right: 10px;
+	float:left;
+}
+.formulario_busca [type=text]{
+	border:2px solid gray;
+	margin-bottom: 5px;
+	border-radius:5px;
+	background-color: #F5F5F5;
+}
+.formulario_busca select{
+
+}
+.formulario_busca [type=text]:focus{
+	border:2px solid cornflowerblue;
+}
+.formulario_busca [type=submit]{
+	border:none;
+	background-color: #4a399f;
+	color:#fff;
+	font-size:15px;
+	padding: 5px;
+	margin:5px;
+	border-radius: 5px;
+	cursor: pointer; 
+	width: 120px;
+}
+.formulario_busca [type=submit]:hover{
+	background-color: cadetblue;
+}
+.busca{
+	margin-top: 5px;
+	padding: 5px;
+	outline: none;
+	border: 2px solid gray;
+	border-radius: 5px;
+	width: 100%;
+	background-color: #F5F5F5;
+	font-family: verdana;
+}
+/*________________________________________________
+botão deletar
+__________________________________________________*/
+.delete{
+	width: 400px;
+	height: 200px;
+	text-align:center;
+	background-color: #DCDCDC;
+	color: white;
+	position: absolute;
+	top: 25%; 
+	left: 35%;
+	display: none;
+}
+.delete p{
+	margin-top: 50px;
+	color: red;
+	font-family: verdana;
+}
+.del{
+	border:none;
+	background-color: #4a399f;
+	color:#fff;
+	font-size:15px;
+	padding: 10px 15px;
+	margin-right: 5px;
+	margin-top: 50px;
+	border-radius: 5px;
+	cursor: pointer; 
+	width: 120px;
+}
+.del:hover {
+	background-color: cadetblue;
+}
+table tr td #linkDel{
+	cursor: pointer;
+}
+/*______________________________________________________
+tabela Pai
+________________________________________________________*/
+.container_pai{
+	width: 100%;
+
+}
+.container_tbl_dados{
+	display: block;
+	width: 47%;
+	float: left;
+	margin-left: 10px;
+}
+.container_tbl_history{
+	display: block;
+	width: 47%;
+	float: right;
+	margin-right: 10px;
+}
+.container_left{
+	display: block;
+	width: 20%;
+	float: left;
+	margin-top: 150px;
+	margin-left: 10px;
+}
+.container_right{
+	display: block;
+	width: 70%;
+	float: right;
+	margin-top: 150px;
+	margin-right: 10px;
+}
+
+/*______________________________________________________
+tabelas Dados do Cliente
+________________________________________________________*/
+.open_Cliente{
+	width: 100%;
+	margin:30px 0px 30px 0px;
+	padding: 5px 10px 10px 10px;
+	text-align: center;
+	font-family:'verdana';
+	font-size: 14px;
+	color:#303030;
+	background-color: #fff;
+	box-shadow:  0 0 1em gray;
+	
+}
+.open_Cliente th{
+	width:100%;
+	padding: 10px;
+	font-size: 1em;
+}
+.open_Cliente td:nth-child(2n-1){
+	background: #eee;
+}
+.open_Cliente td:nth-child(2n){
+	background: #fff;
+}
+.open_Cliente td:nth-child(2n):hover{
+	background: #eee;
+}
+.open_Cliente tr:first-child{
+	background: #fff;
+	color:#404040;
+}
+.open_Cliente tr:nth-child(2){
+	border-bottom: 1px solid gray;
+	color:#404040;
+	font-family: verdana;
+
+	font-size: 14px;
+
+}
+.open_Cliente td{
+	width: 10%;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.open_Cliente #campo{
+	font-weight: bold;
+}
+/*_____________________________________________*/
+
+
+/*______________________________________________________
+tabelas Histórico do Cliente
+________________________________________________________*/
+
+
+.history_client{
+	width: 100%;
+	margin:30px 0px 30px 0px;
+	padding: 5px 10px 10px 10px;
+	text-align: center;
+	font-family:'verdana';
+	font-size: 14px;
+	color:#303030;
+	background-color: #fff;
+	box-shadow:  0 0 1em gray;
+	float: right;
+}
+.history_client th{
+	width:100%;
+	padding: 10px;
+	font-size: 1em;
+}
+.history_client tr:nth-child(2n-1){
+	background: #eee;
+}
+.history_client tr:nth-child(2n){
+	background: #fff;
+}
+.history_client tr:nth-child(2n):hover{
+	background: #eee;
+}
+.history_client tr:first-child{
+	background: #fff;
+	color:#404040;
+}
+.history_client tr:nth-child(2){
+	border-bottom: 1px solid gray;
+	color:#404040;
+	font-family: verdana;
+	font-size: 12px;
+
+}
+.history_client td{
+	width: 10%;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.history_client td#v_total{
+	color:green;
+	font-weight: bold;
+}
+.history_client #campo{
+	font-weight: bold;
+	color:black;
+	
+}.div_link_voltar{
+	margin-top: 100px;
+}
+.botao_link {
+	border:none;
+	background-color: #4a399f;
+	text-decoration: none;
+	color:#fff;
+	font-family: verdana;
+	font-size:15px;
+	padding: 5px;
+	margin-top: 100px;
+	margin-left:100px;
+	border-radius: 5px;
+	cursor: pointer; 
+	box-shadow:  0 0 1em gray;
+}
+.botao_link:hover {
+	background-color: cadetblue;
+}
+.img_op{
+	    width: 12%;
+	}
+
+/*________________________________________________
+LINHA SEPARANDO CONTEÚDO DO TH
+__________________________________________________*/
+hr#inform{
+	margin: 5px auto auto auto;
+	height: 1px;
+	background-color: #ddd;
+	border:none;
+}
+
+
+/*________________________________________________
+			Telas miores que 768px e menor que 1029px
+__________________________________________________*/
+@media(min-width: 768px) and (max-width: 1040px){
+	.img_op{
+	    width: 25%;
+	}
+}
+/*________________________________________________
+			Telas menores que 1166px
+__________________________________________________*/
+@media(max-width: 1166px){
+	.container_tbl_dados{
+		width: 70%;
+		margin:auto;
+		float: none;
+	}
+	.container_tbl_history{
+		width: 70%;
+		margin:auto;
+		float: none;
+	}
+}
+
+/*________________________________________________
+			Telas menores que 768px
+__________________________________________________*/
+@media(max-width: 768px){
+
+	.container_tbl_dados{
+		width: 98%;
+		
+		float: none;
+	}
+	.container_tbl_history{
+		width: 98%;
+		margin:auto;
+		float: none;
+	}
+	.container_left{
+		width: 100%;
+		float: none;
+		margin:auto;
+	}
+	.container_right{
+		width: 100%;
+		float: none;
+		margin: auto;
+				
+	}
+	.formulario_busca{
+		width:98%;
+		margin:auto auto 50px auto;
+		float: none;
+
+	}
+	.formulario_busca label{
+		font-size: 1em;
+	}
+	.Admin_class{
+		width:98%;
+		margin:auto;
+		padding: 5px;
+		float: none;
+	}
+	.Admin_class td{
+		font-size: 1em;
+	}
+	.open_Cliente td{
+		font-size: 1em;
+	}
+	.open_Cliente th{
+		font-size: 1em;
+	}
+	.history_client th{
+		font-size: 1em;
+	}
+	.history_client td{
+		font-size: 1em;
+	}
+	.img_op{
+	    width: 25%;
+	}
+}
+/*________________________________________________
+						botão de voltar
+__________________________________________________*/
+.btn{
+	border:none;
+	background-color: #4a399f;
+	color:#fff;
+	font-size:12px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer; 
+	width:100px;
+	margin:70px auto 5px 20px;
+	box-shadow:  0 0 1em gray;
+}
+.btn:hover {
+	background-color: cadetblue;
+}
+}
+.bt_voltar{
+
+
+}

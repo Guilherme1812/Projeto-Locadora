@@ -1,0 +1,575 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+
+body{ 
+	background-color: #DCDCDC!important;
+	font-family: arial helvetica;
+	
+}
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+
+.logo{
+	position: fixed;
+	margin:10px auto auto 20px;
+	height: 50px;
+	
+}
+.logo_link{
+	font-family:'Saira Stencil One'; 
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #fff;
+}
+div#cabecalho{
+	width: auto;
+	box-shadow: 2px 2px 2px rgba(255,255,255,.5);
+	font-family: 'Saira Stencil One';
+	color:#242172;
+	font-size:80px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+
+
+
+/*aqui menu index*/
+.menu_index {
+    width: 100%;
+    height: 50PX;
+    background-color: #03a9f4;
+    font-family: verdana;
+    font-size: 15px;
+    border-top:1px solid #808080;
+    position: fixed;
+    top: 0;
+    
+}
+.menu_index ul{
+	list-style: none;
+	position: relative;
+	
+}
+.menu_index ul li{
+	width: 125px;
+	float: right;
+
+}
+
+.menu_index ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu_index ul ul li{
+	float: none;
+}
+.menu_index ul ul li a{
+	background-color: #03a9f4;
+	color: #fff;
+}
+
+.menu_index ul li a{
+	padding-top: 15px;
+	height: 49px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: #fff;
+	background-color: #03a9f4;
+	border-radius:3px;
+}
+.naoSele{
+	cursor: pointer;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+.menu_index ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+.menu_index ul li:hover ul{
+	visibility: visible;
+}
+.menu_profile  ul li div{
+	position: absolute;
+	visibility: hidden;
+}
+.menu_profile{
+	position: absolute;
+	background-color: #aaa;
+	width: 250px;
+	height: 300px;
+	float: left;
+	margin-right: 2px;
+	box-shadow:  0 0 1em black;
+	visibility: hidden;
+}
+.menu_index ul li:hover div{
+	visibility: visible;
+}
+.menu_index ul li a:hover{
+	background-color: #01c9f9;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+}
+.menu_index ul ul li#borda{
+	float: none;
+	border-bottom: 1px solid gray;
+}
+.menu_index ul ul li a{
+	background-color: #03a9f4;
+	color: #fff;
+}
+/*Botão logout menu*/
+input#f_menu{
+	list-style: none;
+	position: relative;
+	cursor: pointer;
+	width: 140px;
+	font-family: verdana;
+	font-size: 17px;
+	padding: 10px;
+	height: 49px;
+	text-align: center;
+	color: #fff;
+	background-color: #03a9f4;
+	border:none;
+	border-radius: 5px;
+}
+input#f_menu:hover{
+	background-color: #03a9d9;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	visibility: visible;
+}
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #03a9f4;
+	color: #fff;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+#bt_menu{
+	display: none;
+}
+label[for="bt_menu"]{
+	display: none;
+}
+/*Quando a tela for menor que 768px muda para as configurações abaixo*/
+@media(max-width: 768px){
+	body{
+		background-image: none;
+		background-color:#DCDCDC;
+	}
+	div#cabecalho{
+		width: auto;
+		box-shadow: 2px 2px 2px rgba(255,255,255,.5);
+		font-family: 'Saira Stencil One';
+		color:red;
+		font-size:20px;
+		float: right;
+		margin-right: 15px;
+		padding-right: 5px;
+		background-color: rgba(255,250,250, .9);
+	}
+
+	label[for="bt_menu"]{
+		display: block;
+		border-radius: 10px;
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+	label[for="bt_menu"]:hover{
+		background-color: #7dc3ff;
+	}
+	.menu_index ul li {
+		border-bottom: 1px solid gray;
+	}
+	.menu_index ul li li a{
+		background-color: #7dc3ff;
+	}
+	
+	#bt_menu:checked ~ .menu_index{
+		margin-left: 0;	
+	}
+	#bt_menu:checked ~ .form{
+		margin-top: 300px;	
+	}
+	#bt_menu:checked ~ .sAdmin{
+		margin-top: 300px;	
+	}
+	#bt_menu:checked ~ .btn{
+		margin-top: 300px;	
+	}
+	.menu_index {
+		position: relative;
+	}
+
+	
+	
+	
+	/*menu pagina index*/
+	input#f_menu{
+		width: 100%;
+		float: none;
+	}
+	li#cad{
+		width: 100%;
+	}
+	.menu_index{
+		margin-top:5px;
+		margin-left: -100%;
+		transition: all .4s;
+
+	}
+
+	.menu_index ul li{
+		width: 100%;
+		float: none;
+	}
+	.menu_index ul li ul li{
+		
+		width: 100%;
+		float: none;
+	}
+	.menu_index ul ul {
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu_index ul li:hover ul{
+		height: auto;
+		max-height: 100px;
+	}
+	.form {
+		width: 98%;
+		margin:auto;
+		border-radius: 5px;
+		box-shadow:  0 0 1em gray;
+	}
+	#rodape{
+		font-weight: bold;
+	}
+}
+
+
+/*______________________________________________________
+tabelas da tela index
+________________________________________________________*/
+
+.principal{
+	width: 100%;
+	height: 100px;
+	
+	background-color: #ccc;
+	margin-top: 40px;
+
+	
+}
+/*.lateral{
+	width: 45%;
+	float: right;
+	margin: 50px 30px auto auto;
+	padding: 20px;
+
+}*/
+
+.carro{
+	width: 20%;
+	float: left;
+	margin: 12px 3% auto 5.5%;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 1em gray;
+	transition: background-color .3s;
+}
+.cliente{
+	width: 20%;
+	float: left;
+	margin: 12px 3% auto auto;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 1em gray;
+	transition: background-color .3s;
+}
+.locacao{
+	width: 20%;
+	float: left;
+	margin: 12px 3% auto auto;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 1em gray;
+	transition: background-color .3s;
+}
+.ultimaloc{
+	width: 20%;
+	float: left;
+	margin: 12px 3% auto auto;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 1em gray;
+	transition: background-color .3s;
+	
+}
+.carro:hover{
+	background-color: 	#DCDCDC;
+	font-size: 1.1em;
+}
+.cliente:hover{
+	background-color: 	#DCDCDC;
+	font-size: 1.1em;
+}
+.locacao:hover{
+	background-color: 	#DCDCDC;
+	font-size: 1.1em;
+}
+.ultimaloc:hover{
+	background-color: 	#DCDCDC;
+	font-size: 1.1em;
+}
+.table_dash{
+	margin: auto;
+	text-align: center;
+	
+}
+.table_dash th{
+	font-family: verdana;
+
+}
+.table_dash td{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+
+}
+
+
+/*Quando a tela for menor que 974px muda para as configurações abaixo*/
+@media(max-width: 974px){
+	.principal{
+		height: 200px;
+	}
+	.carro{
+		width: 40%;
+		margin: 12px 3% auto 8%;
+	}
+	.cliente{
+		width: 40%;
+	}
+	.locacao{
+		width: 40%;
+		margin: 12px 3% auto 8%;
+	}
+	.ultimaloc{
+		width: 40%;
+	}
+}
+
+/*Quando a tela for maior que 768px muda para as configurações abaixo*/
+@media screen and (min-width: 769px){
+	.form{
+		margin: auto;
+		width: 500px;
+		height: auto;
+		border-radius: 2%;
+		box-shadow:  0 0 1em gray;
+	}
+	
+}
+.container{
+	width: 100%;
+	padding: 15px;
+}
+.form{
+	background-color: #fff;
+	margin-top: 120px;
+	
+	padding: 5px;
+}
+
+h1{
+	text-align: center;
+	color: #242172;
+	font-family: verdana;
+}
+input[type="text"],[type="password"]{
+	font-size: 15px;
+	width: 100%;
+	padding: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid gray;
+}
+
+input[type="text"]:focus, [type="password"]:focus, [type="radio"]:focus{
+	border-bottom: 2px solid cornflowerblue;
+}
+
+.input-container{
+	margin-bottom: 15px;
+}
+.botao1{
+	margin-bottom: 10px;
+}
+.botao{
+	border:none;
+	background-color: #4a399f;
+	color:#fff;
+	font-size:15px;
+	padding: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	cursor: pointer; 
+	width: 120px;
+	box-shadow:  0 0 1em gray;
+}
+.botao:hover {
+	background-color: cadetblue;
+}
+.botao2{
+	border:none;
+	background-color: #4a399f;
+	color:#fff;
+	font-size:15px;
+	padding: 5px;
+	border-radius: 5px;
+	width:120px;
+	cursor: pointer; 
+	box-shadow:  0 0 1em gray;
+}
+.botao2:hover {
+	background-color: cadetblue;
+}
+#bt_voltar{
+	
+}
+p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+p#rodape{
+	padding: 5px;
+	color:#fff;
+	font-family: verdana;
+}
+p#rodape a{
+	text-decoration: none;
+	color: #050510;	
+}
+p#rodape a:hover{
+	color:cadetblue;
+}
+@keyframes hide {
+  from { opacity: 1 }
+  to   { opacity: 0 }
+}
+p#erro{
+	animation: hide 2s 2s forwards;
+	font-family: verdana;
+	size:20;
+	color:#fff;
+	padding: 10px;
+	background-color: red;
+	border-radius: 15px;
+	box-shadow:  0 0 .5em red;
+	
+}
+p#sucesso{
+	animation: hide 2s 2s forwards;
+	font-family: verdana;
+	font-size:12px;
+	margin: auto;
+	color:green;
+}
+.link{
+	text-decoration: none;
+	color:#1a2537;
+	font-weight: 600;
+
+}
+.link:hover{
+	color: cadetblue;
+}
+/*input tipo date no cadastro de cliente*/
+
+
+}
+label input[type="date"]{
+	margin-left: 40px;
+}
+footer{
+	width: 100%;
+	border-top: 1px solid #fff;
+	background-color: rgba(60,60,60,.5);
+	position: absolute;
+	bottom: 0;
+}/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+select{
+	padding: 5px;
+	outline: none;
+	border: 2px solid gray;
+	border-radius: 5px;
+	width: 100%;
+	
+}
+label#carro{
+	font-family: verdana;
+	font-size: 15px;
+	color:#696969;
+	margin-left: 15px;
+}
+label#sit{
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 15px;
+	color:#404040;
+	margin-left: 5px;
+}
+.location option{
+	font-family: verdana;
+	font-size: 15px;
+	background-color:#DCDCDC;
+}
+
+select:focus{
+	border: 2px solid cornflowerblue;
+}
+.form p#valor{
+	font-family: verdana;
+	font-size: 15px;
+	text-align: left;
+	margin: 5px auto auto 30px;
+	color: red;
+}
+
